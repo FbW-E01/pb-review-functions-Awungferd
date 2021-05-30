@@ -43,7 +43,18 @@ const word = "gainsaid"
 console.log(slicedLastThree(word))
 
 // 6. Write an arrow function that takes in an array and * returns * the type of the first item in that array.
+let someArray =  ["spinning", 200, 669, 235, "choleric","tantrum","cynicism"];
+stringType= ()=> { 
+    console.log(typeof someArray[0] )
+}
+stringType()
 // 7. Write an arrow function that takes in an array and * returns * true, if all items in that array have the same type.
+let someArray =  ["Cao",true, true, true];
+let result=arr=>arr.every(e=>e===true)
+if (result(someArray)===true) { console.log(true)
+    
+} else {console.log("Swipe back once more")
+}
 // 8. Print the`type` of a variable that has a normal function value.
 // 9. Print the`type` of a variable that has an arrow function value.
 // 10. Write and test a function that takes in two parameters(min and max).That function should return another function that doesn't take in any parameters, but returns a random number between min and max. Effectively your "outer" function is a factory that creates customized random number generator functions.
